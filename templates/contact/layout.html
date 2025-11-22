@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweet house</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (للأيقونات) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../base/tokens.css">
+    <link rel="stylesheet" href="../../base/utilities.css">
+    <link rel="stylesheet" href="../../base/typography.css">
+    <link rel="stylesheet" href="../../components/cards/cards.css">
+
+    <link rel="stylesheet" href="../../components/y-u-navbar/navbar.css">
+    <!-- <link rel="stylesheet" href="/templates/homePage/home.css"> -->
+
+</head>
+
+<body>
+    <y-navbar></y-navbar>
+    <header>
+        <div class="my-5 p-0">
+            <img src="../../imgs/b210abedef5f9a2a6e15c2235e83d540a5d1be1c.png" alt="" class="w-100">
+        </div>
+    </header>
+
+
+    <section>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h2 class="header-text y-u-beigeColor mb-4">
+                        <i class="fa-regular fa-envelope y-u-blue text-white p-2 rounded-circle"></i>
+                        يسعدنا إستقبال رسالتك
+                    </h2>
+
+                    <div class="row ">
+                        <div class="col-md-7">
+                            <div class="form-container">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label fs-5 fw-bold">الاسم الثلاثي</label>
+                                        <input type="text" class="form-control rounded-5 border-3" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fs-5 fw-bold">البريد الإلكتروني</label>
+                                        <input type="email" class="form-control rounded-5 border-3" id="email" required>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="tel" class="form-label fs-5 fw-bold">رقم الهاتف </label>
+                                        <input type="tel" class="form-control rounded-5 border-3" id="tel" required>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="msg" class="form-label fs-5 fw-bold">موضوع الرساله</label>
+                                        <input type="text" class="form-control rounded-5 border-3" id="msg" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label required fs-5 fw-bold">نص الرسالة</label>
+                                        <textarea class="form-control rounded-4 border-3" id="message" rows="4"
+                                            required></textarea>
+                                    </div>
+
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button type="submit" class="btn text-white fs-3 px-5 y-u-blue rounded-5">
+                                            إرسال
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-5 d-flex justify-content-center">
+                            <div class="contact-card px-5 py-5 text-white shadow-sm rounded y-u-blue w-75 h-75">
+                                <h3 class="mb-3">تواصل معنا</h3>
+                                <p><i class="fa-solid fa-location-dot y-u-bluetxt bg-light p-2 rounded-circle "></i>
+                                    الرياض - شارع العليا</p>
+                                <p><i class="fa-solid fa-phone y-u-bluetxt bg-light p-2 rounded-circle "></i>
+                                    059688929 - 058493948</p>
+                                <p> <i class="fa-regular fa-envelope y-u-bluetxt bg-light p-2 rounded-circle "></i>
+                                    info@super.ksa.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center mb-5 shape">
+                <div class="flex-grow-1 border-top  border-3 border-info " style="max-width:200px; "></div>
+                <div class="rounded-circle border border-3  border-info  mx-3" style="width:50px; height:50px;"></div>
+                <div class="flex-grow-1 border-top border-3  border-info " style="max-width:200px;"></div>
+            </div>
+            <h2 class=" y-u-beigeColor my-3 text-center y-u-bluetxt">زورونا في فروعنا</h2>
+            <h2 class=" y-u-beigeColor my-3 text-center y-u-bluetxt">
+                أوقات الدوام من 9:30 ص حتى 10:30 م</h2>
+
+
+        </div>
+           <div class="map-container justify-content-center d-flex my-5 ">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628022.6720649824!2d38.8260418!3d23.8859425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15eaaa59f37e9aeb%3A0x4b6d9f0b8bbf219d!2sSaudi%20Arabia!5e0!3m2!1sen!2seg!4v1695040000000!5m2!1sen!2seg" 
+        width="80%" 
+        height="400" 
+        style="border:0;"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <y-footer></y-footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/include.js"></script>
+</body>

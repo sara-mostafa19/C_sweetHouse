@@ -1,0 +1,9 @@
+
+.counter{
+    border: 1px solid;
+    border-color: var( --y-u-blue);
+
+}
+.button{
+    width: 250px;
+}

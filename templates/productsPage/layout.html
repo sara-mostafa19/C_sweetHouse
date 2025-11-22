@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamira</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (للأيقونات) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../base/tokens.css">
+    <link rel="stylesheet" href="../../base/utilities.css">
+    <link rel="stylesheet" href="../../base/typography.css">
+    <link rel="stylesheet" href="../../components/cards/cards.css">
+
+    <link rel="stylesheet" href="../../components/y-u-navbar/navbar.css">
+    <!-- <link rel="stylesheet" href="/templates/homePage/home.css"> -->
+
+</head>
+
+<body>
+    <y-navbar></y-navbar>
+    <header>
+        <div class="my-5 p-0">
+            <img src="../../imgs/b210abedef5f9a2a6e15c2235e83d540a5d1be1c.png" alt="" class="w-100">
+        </div>
+    </header>
+
+    <section>
+        <div class="container d-flex justify-content-between">
+            <h1>الحلويات</h1>
+            <select class="form-select w-25 " aria-label="Default select example" >
+                <option selected class="text-center">ترتيب حسب</option>
+                <option value="1">الاعلي تقيما</option>
+                <option value="2">السعر الاقل اولا</option>
+                <option value="3">السعر الاعلي اولا</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <ul id="productsGrid" class="products-grid row row-cols-2 row-cols-sm-2 row-cols-lg-5 g-4 list-unstyled">
+
+        </ul>
+    </section>
+
+
+    <y-footer></y-footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/include.js"></script>
+    <script src="../../js/products.js"></script>
+</body>

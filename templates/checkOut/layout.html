@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamira</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../base/tokens.css">
+    <link rel="stylesheet" href="../../base/utilities.css">
+    <link rel="stylesheet" href="../../base/typography.css">
+    <link rel="stylesheet" href="../../components/buttons/button.css">
+    <link rel="stylesheet" href="../../components/cards/cards.css">
+    <link rel="stylesheet" href="../singleProduct/single.css">
+    <link rel="stylesheet" href="../../components/y-u-navbar/navbar.css">
+    <link rel="stylesheet" href="../homePage/home.css">
+    <link rel="stylesheet" href="../cart/cart.css">
+    <link rel="stylesheet" href="popUp.css">
+</head>
+
+<body>
+    <y-navbar></y-navbar>
+
+
+    <header>
+        <div class="my-5 p-0">
+            <img src="../../imgs/63f97ac5b3f184d3828a801f46331335718c0490.png" alt="" class="w-100 img-fluid">
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7">
+
+
+                        <div class="form-section">
+                            <h5 class="mb-3">معلومات التوصيل</h5>
+                            <p>سوف نستخدم هذا البريد الإلكتروني لإرسال التفاصيل والتحديثات إليك حول طلبك.</p>
+                            <input type="email" class="form-control" placeholder="*******@gmail.com">
+                        </div>
+
+                        <div class="form-section mt-5">
+                            <h5 class="mb-3">عنوان الدفع</h5>
+                            <p>أدخل عنوان الفاتورة الذي يتطابق مع طريقة الدفع الخاصة بك.*</p>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="الاسم الأول">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="اسم العائلة">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control mb-3" placeholder="عنوان الشارع/رقم المنزل">
+                            <div class="row g-3 mb-3">
+                                <label class="form-label fs-5 fw-bold my-4">+ إضافة شقة، الجناح، الوحدة، إلخ</label>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="المحافظه ">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="المدينه ">
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="الرمز البريدي">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="رقم الجوال">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-section border border-2  rounded-4">
+
+                            <div class="form-check  p-4 mb-3 position-relative">
+                                <div
+                                    class="d-flex justify-content-between align-items-center align-content-center mb-3">
+                                    <span class="fw-bold fs-5">الدفع عبر الانترنت</span>
+                                    <div class="card-icons d-flex gap-2">
+                                        <img src="../../imgs/14ac706bc683a40044e5ed088daec5a19cd5f0df.png"
+                                            alt="MasterCard" width="50">
+                                        <img src="../../imgs/9bba8209976eea69d60d23e18935aea608d9ce4d.png" alt="Visa"
+                                            width="70">
+                                    </div>
+                                </div>
+                                <p class="fw-bold mb-3">ادفع ببطاقاتك الإئتمانية.</p>
+                                </label>
+
+                                <div class="row g-3 mt-2">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="اسم حامل البطاقة">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="رقم البطاقه">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="MM / YY">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="CVC">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-check p-4 d-flex justify-content-between">
+                                <div class=" d-flex align-items-center">
+                                    <input class="form-check-input border border-3 p-2  m-3" type="radio"
+                                        name="paymentMethod" id="payStc">
+                                    <span class="fw-bold fs-5">الدفع عن طريق stc pay</span>
+                                </div>
+
+                                <label class="form-check-label d-flex align-items-center  justify-content-between"
+                                    for="payStc">
+                                    <img src="../../imgs/e40bf75ed54de23843dce07009b07657b2b122da.png" alt="stc pay"
+                                        width="80">
+                                </label>
+                            </div>
+
+                        </div>
+
+       
+                        <div class="form-check border-bottom border-3 rounded-4 p-4 position-relative">
+                           
+                            <input class="form-check-input position-absolute end-0 top-0 m-3" type="radio"
+                                name="extraOption" id="addNote" data-bs-toggle="collapse" data-bs-target="#noteForm">
+
+                            <label class="form-check-label fw-bold fs-5 pe-4" for="addNote">
+                                إضافة ملاحظة
+                            </label>
+
+                            <div class="collapse mt-3" id="noteForm">
+                                <textarea class="form-control" rows="3"
+                                    placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <p>من خلال متابعة عملية الشراء الخاصة بك، فإنك توافق على الشروط والأحكام وسياسة الخصوصية الخاصة بنا Privacy Policy</p>
+
+                  
+                        <div class="justify-content-between d-flex my-5">
+                            
+                            <a href="../cart/layout.html" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-right ms-2"></i>العودة إلى سلة المشتريات</a>
+                                  <button class="btn btn-pay y-u-beigeBg p-3 text-white w-50 fs-5" onclick="showSuccessPopup()">الدفع</button>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="summary-box cart-item rounded-4 p-4">
+                            <h4 class="text-end mb-3">إجمالي الطلبات</h4>
+                            <div class="d-flex justify-content-between border-top p-3">
+                                <span>المجموع</span>
+                                <span>436,00 رس</span>
+                            </div>
+                        
+                            <div class="d-flex justify-content-between border-top p-3">
+                                <span>ضريبة القيمة المضافة</span>
+                                <span>575,00 رس</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-top border-bottom p-3 fw-bold">
+                                <span> الاجمالي المقدر</span>
+                                <span>12,406.22 رس</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+    
+  <div id="successPopup" class="popup-overlay p-5 h-100">
+    <div class="popup-card text-center h-75 align-content-center">
+      <h1 class="fw-bold my-5 y-u-beigeColor ">
+        <i class="fa-regular fa-circle-check text-success"></i>
+        تم الدفع بنجاح
+
+      </h1>
+      <a href="../homePage/layout.html" class="btn return-btn text-white my-5 fs-4" ><i class="fa-solid fa-arrow-right ms-2"></i>العودة إلى الرئيسية </a>
+    </div>
+  </div>
+
+<y-footer></y-footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/counter.js"></script>
+    <script src="../../js/include.js"></script>
+</body>
+
+</html>

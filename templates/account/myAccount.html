@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweet house</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (للأيقونات) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../base/tokens.css">
+    <link rel="stylesheet" href="../../base/utilities.css">
+    <link rel="stylesheet" href="../../base/typography.css">
+    <link rel="stylesheet" href="../../components/cards/cards.css">
+    <link rel="stylesheet" href="single.css">
+    <link rel="stylesheet" href="../cart/cart.css">
+    <link rel="stylesheet" href="../../components/y-u-navbar/navbar.css">
+    <!-- <link rel="stylesheet" href="/templates/homePage/home.css"> -->
+
+</head>
+
+<body>
+    <y-navbar></y-navbar>
+
+    <header class="position-relative mb-5">
+
+        <img src="../../imgs/b210abedef5f9a2a6e15c2235e83d540a5d1be1c.png" alt="" class="w-100">
+
+        <div class="position-absolute top-100  translate-middle d-flex align-items-center">
+            <img src="../../imgs/eae5d6a1005f23beb59abb9f27adcc92e8257b4a.jpg"
+                class="rounded-circle border border-3 border-white" alt="profile" width="120" height="120">
+            <p class="fw-bold fs-4 ms-3 mt-5">اماني عبدالله</p>
+        </div>
+    </header>
+
+
+    <section>
+
+        <div class="container-fluid container-lg d-flex flex-nowrap justify-content-between align-items-center py-5">
+            <ul class="nav nav-tabs border-0 fs-4 flex-nowrap" id="accountTabs" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active text-dark" id="account-tab" data-bs-toggle="tab"
+                        data-bs-target="#account" type="button" role="tab">
+                        <i class="fa-regular fa-user ms-1"></i> حسابي
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link text-dark" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders"
+                        type="button" role="tab">
+                        <i class="fa-solid fa-bag-shopping ms-1"></i> الطلبات
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link text-dark" id="notifs-tab" data-bs-toggle="tab" data-bs-target="#notifs"
+                        type="button" role="tab">
+                        <i class="fa-regular fa-bell ms-1"></i> الاشعارات
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a href="../../templates/login/layout.html" class="nav-link text-dark">
+                        <i class="fa-solid fa-arrow-right-from-bracket ms-1"></i> تسجيل خروج
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="container my-3">
+            <div class="tab-content" id="accountTabsContent">
+
+                <!-- acc -->
+                <div class="tab-pane fade show active " id="account" role="tabpanel">
+                    <div class="row my-5 justify-content-between">
+                        <div class="col-lg-6">
+                            <h2 class="fw-bold mb-4">حسابي</h2>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6 col-sm-6">
+                                        <label class="form-label">الاسم الأول</label>
+                                        <input type="text" class="form-control rounded-4">
+                                    </div>
+                                    <div class="col-md-6  col-sm-6">
+                                        <label class="form-label">اسم العائلة</label>
+                                        <input type="text" class="form-control rounded-4">
+                                    </div>
+                                    <div class="col-md-6  col-sm-6">
+                                        <label class="form-label">تاريخ الميلاد</label>
+                                        <input type="date" class="form-control rounded-4">
+                                    </div>
+                                    <div class="col-md-6  col-sm-6">
+                                        <label class="form-label">النوع</label>
+                                        <select class="form-select rounded-4">
+                                            <option>ذكر</option>
+                                            <option>أنثى</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <label class="form-label">البريد الالكتروني</label>
+                                        <input type="email" class="form-control rounded-4">
+                                    </div>
+                                    <div class="col-md-6  col-sm-6">
+                                        <label class="form-label">رقم الجوال</label>
+                                        <input type="tel" class="form-control rounded-4">
+                                    </div>
+                                </div>
+
+                                <div class="text-center d-flex justify-content-center">
+                                    <button type="submit" class="btn mt-4 px-5 y-u-beigeBg text-white w-50 fs-4    ">
+                                        حفظ
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-4 my-5">
+                            <div class="mb-4">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input p-2 fs-4" type="checkbox" id="notifSwitch">
+                                    <label class="form-check-label fw-bold fs-5" for="notifSwitch"> <i
+                                            class="fa-solid fa-bullhorn"></i> توقف الاشعارات</label>
+                                    <p class="fs-6"> هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية
+                                        تم تعديلها بشكل</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-check">
+                                    <label class="form-check-label fw-bold fs-5" for="deleteAcc"><i
+                                            class="fa-regular fa-user"></i> حذف حسابي</label>
+                                    <p class="fs-6"> هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية
+                                        تم تعديلها بشكل</p>
+                                </div>
+                                <button class="btn btn-outline-danger mt-2 fs-5 "> تعطيل الحساب</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- talbat -->
+                <div class="tab-pane fade mb-5" id="orders" role="tabpanel">
+                    <h2 class="fw-bold mb-5">الطلبات</h2>
+
+                    <div class="p-3 mb-3 col-12 col-md-9 fs-5">
+                        <div class="d-flex justify-content-between fw-bold">
+                            <div class="w-25">المنتج</div>
+                            <div class="w-25 text-center">التاريخ</div>
+                            <div class="w-25 text-center">الحالة</div>
+                            <div class="w-25 text-center">الإجمالي</div>
+                            <div class="w-25 text-center">إجراءات</div>
+                        </div>
+                    </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between cart-item rounded-4 p-2 mb-3 col-12 col-md-9">
+                        <div class="d-flex align-items-center gap-3 w-25">
+                            <img src="../../imgs/60aa8b2251d6c237ba7dba4799cef76fc3eb4fb6.png" alt="product"
+                                class="rounded" width="80">
+                            <div >
+                                <p>تورته اوريو ميني</p>
+                            </div>
+                        </div>
+
+                        <div class="w-25 text-center fw-bold  me-5">2/4/2024</div>
+                        <div class="w-25 text-center fw-bold">ناجح</div>
+                        <div class="w-25 text-center fw-bold">المجموع: 7,095.36 ريال</div>
+                        <div class="w-25 text-center">
+                            <button class="btn btn-outline-dark btn-sm fs-5 fw-bold">عرض</button>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex align-items-center justify-content-between cart-item rounded-4 p-2 mb-3 col-12 col-md-9">
+                        <div class="d-flex align-items-center gap-3 w-25">
+                            <img src="../../imgs/60aa8b2251d6c237ba7dba4799cef76fc3eb4fb6.png" alt="product"
+                                class="rounded" width="80">
+                            <div>
+                                <p>تورته اوريو ميني</p>
+                            </div>
+                        </div>
+
+                        <div class="w-25 text-center fw-bold  me-5">2/4/2024</div>
+                        <div class="w-25 text-center fw-bold">ناجح</div>
+                        <div class="w-25 text-center fw-bold">المجموع: 7,095.36 ريال</div>
+                        <div class="w-25 text-center">
+                            <button class="btn btn-outline-dark btn-sm fs-5 fw-bold">عرض</button>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex align-items-center justify-content-between cart-item rounded-4 p-2 mb-3 col-12 col-md-9">
+                        <div class="d-flex align-items-center gap-3 w-25">
+                            <img src="../../imgs/60aa8b2251d6c237ba7dba4799cef76fc3eb4fb6.png" alt="product"
+                                class="rounded" width="80">
+                            <div >
+                                <p>تورته اوريو ميني</p>
+                            </div>
+                        </div>
+
+                        <div class="w-25 text-center fw-bold  me-5">2/4/2024</div>
+                        <div class="w-25 text-center fw-bold">ناجح</div>
+                        <div class="w-25 text-center fw-bold">المجموع: 7,095.36 ريال</div>
+                        <div class="w-25 text-center">
+                            <button class="btn btn-outline-dark btn-sm fs-5 fw-bold">عرض</button>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex align-items-center justify-content-between cart-item rounded-4 p-2 mb-3 col-12 col-md-9">
+                        <div class="d-flex align-items-center gap-3 w-25">
+                            <img src="../../imgs/60aa8b2251d6c237ba7dba4799cef76fc3eb4fb6.png" alt="product"
+                                class="rounded" width="80">
+                            <div >
+                                <p>تورته اوريو ميني</p>
+                            </div>
+                        </div>
+
+                        <div class="w-25 text-center fw-bold  me-5">2/4/2024</div>
+                        <div class="w-25 text-center fw-bold">ناجح</div>
+                        <div class="w-25 text-center fw-bold">المجموع: 7,095.36 ريال</div>
+                        <div class="w-25 text-center">
+                            <button class="btn btn-outline-dark btn-sm fs-5 fw-bold">عرض</button>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex align-items-center justify-content-between cart-item rounded-4 p-2 mb-3 col-12 col-md-9">
+                        <div class="d-flex align-items-center gap-3 w-25">
+                            <img src="../../imgs/60aa8b2251d6c237ba7dba4799cef76fc3eb4fb6.png" alt="product"
+                                class="rounded" width="80">
+                            <div>
+                                <p class="mb-1 fw-bold">تورته اوريو ميني</p>
+                            </div>
+                        </div>
+
+                        <div class="w-25 text-center fw-bold  me-5">2/4/2024</div>
+                        <div class="w-25 text-center fw-bold">ناجح</div>
+                        <div class="w-25 text-center fw-bold">المجموع: 7,095.36 ريال</div>
+                        <div class="w-25 text-center">
+                            <button class="btn btn-outline-dark btn-sm fs-5 fw-bold">عرض</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Notifications -->
+                <div class="tab-pane fade show mb-5" id="notifs" role="tabpanel">
+                    <h2 class="fw-bold mb-4">الإشعارات</h2>
+
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="p-3 cart-item rounded-4 col-12 col-md-9">
+                            <p class="fw-bold mb-1 fs-5">
+                                هناك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم،
+                                ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر
+                                أو الكلمات العشوائية إلى النص.
+                            </p>
+                        </div>
+                        <button class="btn btn-sm btn-danger rounded-circle me-3">
+                            <i class="fa-solid fa-xmark fs-5"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="p-3 cart-item rounded-4 col-12 col-md-9">
+                            <p class="fw-bold mb-1 fs-5">
+                                هناك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم،
+                                ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر
+                                أو الكلمات العشوائية إلى النص.
+                            </p>
+                        </div>
+                        <button class="btn btn-sm btn-danger rounded-circle me-3">
+                            <i class="fa-solid fa-xmark fs-5"></i>
+                        </button>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="p-3 cart-item rounded-4 col-12 col-md-9">
+                            <p class="fw-bold mb-1 fs-5">
+                                هناك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم،
+                                ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر
+                                أو الكلمات العشوائية إلى النص.
+                            </p>
+                        </div>
+                        <button class="btn btn-sm btn-danger rounded-circle me-3">
+                            <i class="fa-solid fa-xmark fs-5"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="p-3 cart-item rounded-4 col-12 col-md-9">
+                            <p class="fw-bold mb-1 fs-5">
+                                هناك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم،
+                                ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر
+                                أو الكلمات العشوائية إلى النص.
+                            </p>
+                        </div>
+                        <button class="btn btn-sm btn-danger rounded-circle me-3">
+                            <i class="fa-solid fa-xmark fs-5"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="p-3 cart-item rounded-4 col-12 col-md-9">
+                            <p class="fw-bold mb-1 fs-5">
+                                هناك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم،
+                                ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر
+                                أو الكلمات العشوائية إلى النص.
+                            </p>
+                        </div>
+                        <button class="btn btn-sm btn-danger rounded-circle me-3">
+                            <i class="fa-solid fa-xmark fs-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <y-footer></y-footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="/js/counter.js"></script> -->
+    <script src="../../js/include.js"></script>
+</body>
+
+</html>

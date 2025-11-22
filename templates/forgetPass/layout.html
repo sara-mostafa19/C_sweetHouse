@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweet house</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (للأيقونات) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../base/tokens.css">
+    <link rel="stylesheet" href="../../base/utilities.css">
+    <link rel="stylesheet" href="../../base/typography.css">
+    <link rel="stylesheet" href="../../components/cards/cards.css">
+    <link rel="stylesheet" href="single.css">
+    <link rel="stylesheet" href="../../components/y-u-navbar/navbar.css">
+    <!-- <link rel="stylesheet" href="/templates/homePage/home.css"> -->
+
+</head>
+
+<body>
+    <y-navbar></y-navbar>
+    <header>
+        <div class=" p-0">
+            <img src="../../imgs/b210abedef5f9a2a6e15c2235e83d540a5d1be1c.png" alt="" class="w-100">
+        </div>
+    </header>
+
+    <section class="y-u-bg">
+        <div class="container py-5 ">
+            <div class="row justify-content-center">
+                <div class="col-md-6 ">
+                            <div class="form-container y-u-bg-white p-5 rounded-4 shadow h-100">
+
+                                <h2 class="header-text y-u-bluetxt mb-4">
+                                    <i class="fa-regular fa-circle-user"></i>استعادة كلمة المرور
+                                </h2>
+
+                                <form class="row g-3 ">
+                                    <div class="col-md-10">
+                                        <p>برجاء تسجيل رقم الهاتف المسجل به الحساب وسيصلك كود مكون من 4 أرقام</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="tel" class="form-label fs-5 fw-bold">ادخل رقم الهاتف </label>
+                                        <input type="tel" class="form-control rounded-5 border-3" id="tel" required>
+                                    </div>
+
+
+                                    <div class="col-12 d-flex justify-content-center mt-5">
+                                        <button type="button" id="nextBtn"
+                                            class="btn text-white fs-5 px-3 y-u-blue rounded-3">
+                                            التالي
+                                        </button>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                            
+                        <div id="successMessage" class=" p-5 rounded-4 shadow h-100 text-center col-md-12"
+                            style="display: none;">
+                            <p class="fs-5"><i class="fa-regular fa-circle-check bg-success rounded-circle text-white fs-3"></i>
+                                لقد تم إرسال رسالة إعادة تعيين كلمة المرور إلى عنوان البريد الإلكتروني الموجود في ملف
+                                حسابك.</p>
+                                <p class="fs-5 mt-5">
+                                قد تستغرق عدة دقائق لتظهر في صندوق البريد الوارد لديك.</p>
+                                <p class="fs-5 mt-5" > 
+                                يرجى الانتظار 10 دقائق على الأقل قبل محاولة إعادة تعيين آخر.
+                            </p>
+                        </div>
+                        </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <y-footer></y-footer>
+
+    <script>
+        document.getElementById("nextBtn").addEventListener("click", function () {
+            // اخفاء الفورم
+            document.querySelector(".form-container").style.display = "none";
+
+            // اخفاء العمود اللي فيه الصورة
+            document.querySelector(".img").style.display = "none";
+
+            // اظهار الرسالة
+            document.getElementById("successMessage").style.display = "block";
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/include.js"></script>
+</body>
